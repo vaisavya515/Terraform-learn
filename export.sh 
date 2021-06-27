@@ -1,0 +1,7 @@
+az login 
+az account show 
+az ad sp create-for-rbac --role="Owner" --scopes="/subscriptions/af0a9fc8-14bb-43fb-be7d-631ffd45611c"
+terraform init
+terraform plan 
+terraform apply -auto-approve 
+terraform destroy -auto-approve
